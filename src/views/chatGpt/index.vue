@@ -23,7 +23,7 @@ export default {
     return {
       messages: [],
       userMessage: '',
-      openaiApiKey: '<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>',
+      openaiApiKey: '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',
       conversationLength: 100,
       model: 'davinci',
       openaiEndpoint: 'https://api.openai.com/v1/'
