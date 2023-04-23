@@ -19,6 +19,7 @@
 import axios from 'axios';
 
 export default {
+  name: "chatGptIndex",
   data() {
     return {
       messages: [],

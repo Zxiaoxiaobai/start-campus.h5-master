@@ -287,6 +287,12 @@ const routes = [
         meta: {title: 'chatGpt助手'},
         component: () => import("../views/chatGpt/index"),
     },
+    {
+        path: '/chatGpt/ChatGpt',
+        name: 'ChatGpt',
+        meta: {title: 'chatGpt窗口'},
+        component: () => import("../views/chatGpt/ChatGpt"),
+    },
     /**************************************************************评论举报**********************************************/
     {
         path: '/commentReport',

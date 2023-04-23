@@ -119,7 +119,7 @@ export default {
             router.push("/commodity/publish")
         }
       const toChatgpt = async () => {
-         router.push("/chatgpt/index")
+         router.push("/chatgpt/ChatGpt")
       }
         /**
          * 跳转到发布失物招领页面
