@@ -32,7 +32,7 @@
                     </svg>
                 </template>
             </van-grid-item>
-            <van-grid-item icon="envelop-o" text="树洞" @click="toTreeHole">
+            <van-grid-item icon="envelop-o" text="帖子论坛" @click="toTreeHole">
                 <template #icon>
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-luntan"></use>

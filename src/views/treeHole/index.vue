@@ -1,8 +1,8 @@
 <template>
     <div>
         <navbar :title="data.navbarTitle" :path="data.navbarPath"/>
-        <van-cell value="在这里你可以得到很多消息，严格遵守树洞规则"/>
-        <van-cell title="推荐圈子" is-link value="圈子广场" @click="toCircleSquare"/>
+        <van-cell value="在这里你可以得到很多消息，严格遵守论坛规则"/>
+        <van-cell title="推荐圈" is-link value="论坛广场" @click="toCircleSquare"/>
         <van-cell v-for="circle in data.circles" :key="circle.uuid">
             <template #title>
                 <span @click="toCircleDetail(circle.uuid)">{{ circle.title }}</span>

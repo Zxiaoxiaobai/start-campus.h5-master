@@ -78,16 +78,16 @@
                     </van-space>
                 </template>
             </van-cell>
-            <van-cell is-link @click="toContactAdmin">
-                <template #title>
-                    <van-space :size="5">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-lianxikefu"></use>
-                        </svg>
-                        <span>在线客服</span>
-                    </van-space>
-                </template>
-            </van-cell>
+<!--            <van-cell is-link @click="toContactAdmin">-->
+<!--                <template #title>-->
+<!--                    <van-space :size="5">-->
+<!--                        <svg class="icon" aria-hidden="true">-->
+<!--                            <use xlink:href="#icon-lianxikefu"></use>-->
+<!--                        </svg>-->
+<!--                        <span>在线客服</span>-->
+<!--                    </van-space>-->
+<!--                </template>-->
+<!--            </van-cell>-->
         </div>
         <tabbar-index :active-index="3"/>
         <upload-image-loading :show-loading="uploadShow"/>
