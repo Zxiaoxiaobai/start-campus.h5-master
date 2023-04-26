@@ -91,7 +91,7 @@ export default {
             navbarTitle: '闲置商品',
             navbarPath: '/',
             commodities: [],
-            loading: true,
+            loading: false,
             finished: false,
             active: 0,
             categories: [],

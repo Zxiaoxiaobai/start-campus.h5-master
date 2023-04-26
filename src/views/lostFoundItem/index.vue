@@ -93,7 +93,7 @@ export default {
             navbarPath: '/',
             publishTypeTitle: '发布类型',
             lostFoundItems: [],
-            loading: true,
+            loading: false,
             finished: false,
             categories: [],
             refreshing: false,

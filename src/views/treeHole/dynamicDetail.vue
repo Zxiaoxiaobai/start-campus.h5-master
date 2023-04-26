@@ -166,7 +166,7 @@ export default {
             navbarTitle: '动态详情',
             navbarPath: '/treeHole/index',
             dynamicDetail: '',
-            skeletonLoading: true,
+            skeletonLoading: false,
             commentLoading: false,
             commentFinished: false,
             // 动态父级评论数组

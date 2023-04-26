@@ -76,7 +76,7 @@ export default {
         const data = reactive({
             navbarTitle: '我的商品',
             navbarPath: '/user/person',
-            loading: true,
+            loading: false,
             finished: false,
             commodities: [],
             refreshing: false
