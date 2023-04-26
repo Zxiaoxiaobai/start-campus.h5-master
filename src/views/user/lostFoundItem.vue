@@ -130,7 +130,7 @@ export default {
             navbarPath: '/user/person',
             publishTypeTitle: '',
             lostFoundItems: [],
-            loading: true,
+            loading: false,
             finished: false,
             refreshing: false,
         })
