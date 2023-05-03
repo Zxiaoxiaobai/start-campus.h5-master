@@ -160,7 +160,7 @@ export default {
                 document.getElementById("comment").scrollIntoView()
                 commentAddRo.content = ''
                 searchParam.page = 0
-                data.finished = false
+                data.finished = true
                 data.lostFoundItemComments = []
             })
         }

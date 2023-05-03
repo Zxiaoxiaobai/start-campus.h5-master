@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="footer">
-                <van-field v-model="data.content" placeholder="请输入用户名" class="message-input"/>
+                <van-field v-model="data.content" placeholder="请输入内容" class="message-input"/>
                 <img src="../../assets/static/image/icon_send.png" class="icon-send" @click="sendMessage"/>
             </div>
         </van-pull-refresh>

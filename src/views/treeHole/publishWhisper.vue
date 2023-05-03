@@ -9,7 +9,7 @@
                         :scrollable="false"
                     >
                         <template #default>
-                            <span style="display: flex">悄悄话发布须知：</span>
+                            <span style="display: flex">帖子发布须知：</span>
                             <span style="display: flex">1.发布文字不能出现敏感词汇</span>
                             <span style="display: flex">2.不能出现敏感图片</span>
                             <span style="display: flex">3.最多只能上传6张图片</span>
@@ -59,7 +59,7 @@
                     type="textarea"
                     name="description"
                     label="内容"
-                    placeholder="悄悄的说两句"
+                    placeholder="说两句"
                     :rules="[{ required: true, message: '请输入内容' }]"
                 />
                 <van-field
@@ -140,7 +140,7 @@ export default {
         const uploadShow = ref(false);
         const router = useRouter();
         const data = reactive({
-            navbarTitle: '发布悄悄话',
+            navbarTitle: '发贴',
             navbarPath: '/treeHole/index',
             plateName: '',
             plateUuid: '',

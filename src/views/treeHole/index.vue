@@ -2,7 +2,7 @@
     <div>
         <navbar :title="data.navbarTitle" :path="data.navbarPath"/>
         <van-cell value="在这里你可以得到很多消息，严格遵守论坛规则"/>
-        <van-cell title="推荐圈" is-link value="论坛广场" @click="toCircleSquare"/>
+        <van-cell title="推荐" is-link value="论坛广场" @click="toCircleSquare"/>
         <van-cell v-for="circle in data.circles" :key="circle.uuid">
             <template #title>
                 <span @click="toCircleDetail(circle.uuid)">{{ circle.title }}</span>
@@ -118,7 +118,7 @@ export default {
     components: {Navbar},
     setup() {
         const data = reactive({
-            navbarTitle: '树洞',
+            navbarTitle: '论坛帖子',
             navbarPath: '/',
             circles: [],
             dynamics: [],
@@ -129,7 +129,7 @@ export default {
         const router = useRouter()
         const showPopover = ref(false);
         const actions = [
-            {text: '悄悄话'},
+            {text: '发帖'},
             {text: '写问答'},
         ];
         const dynamicSearchParam = reactive({
@@ -179,7 +179,7 @@ export default {
             router.push({path: '/treeHole/circle/detail', query: {uuid: uuid}})
         }
         const onSelect = (action) => {
-            if (action.text === '悄悄话') {
+            if (action.text === '发帖') {
                 // 跳转到发布悄悄话界面
                 router.push("/treeHole/publishWhisper")
             }
@@ -191,7 +191,7 @@ export default {
             page(dynamicSearchParam).then(res => {
                 const result = res.data.records
                 if (result.length < dynamicSearchParam.size) {
-                    data.finished = true
+                    data.finished = false
                 }
                 result.forEach(item => {
                     const dynamicType = commonUtil.dynamicType.find(type => {

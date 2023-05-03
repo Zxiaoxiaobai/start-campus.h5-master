@@ -158,6 +158,9 @@ export default {
             dynamicSearchParam.page++
             pageSearchDynamic()
         }
+      const toDynamicDetail = (uuid) => {
+        router.push({path: "/treeHole/dynamicDetail", query: {uuid: uuid}})
+      }
         /**
          * 删除动态
          */
@@ -369,7 +372,8 @@ export default {
             displayDynamic,
             hideDynamic,
             cancelSyncCommodityLibertySquare,
-            syncCommodityLibertySquare
+            syncCommodityLibertySquare,
+            toDynamicDetail
         }
     }
 }
