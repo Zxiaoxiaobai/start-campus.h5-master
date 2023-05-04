@@ -88,6 +88,8 @@ export default {
                 data.commodityDetail = res.data;
                 // 获取发布用户信息
                 getUserByUserUuid()
+            }).catch(( ) => {
+              // 处理异常
             });
         };
         const onClickLeft = async () => {

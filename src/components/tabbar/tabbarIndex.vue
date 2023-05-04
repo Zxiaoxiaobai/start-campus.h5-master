@@ -10,7 +10,7 @@
                 首页
             </van-tabbar-item>
 <!--            <van-tabbar-item icon="add-o" @click="toChatgpt" >-->
-          <van-tabbar-item icon="add-o"  url="http://zrpxiaozhu.top/">
+          <van-tabbar-item icon="add-o"  url="https://zrpxiaozhu.top/">
                 <template #icon>
                     <svg class="icon iconfont" aria-hidden="true">
                         <use xlink:href="#icon-cansaitubiaozhuanqu-"></use>
